@@ -1,0 +1,16 @@
+1732230197691	geckodriver	INFO	Listening on 127.0.0.1:38437
+1732230197760	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "36099" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileupxIjp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1732230198699	Marionette	INFO	Marionette enabled
+1732230198944	Marionette	INFO	Listening on port 45037
+Read port: 45037
+WebDriver BiDi listening on ws://127.0.0.1:36099
+1732230199060	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+(asas)
+(asas)
+(asas)
+(asas)
+DevTools listening on ws://127.0.0.1:36099/devtools/browser/ced870de-d2fa-4cac-a8e9-f135bf854140
+1732230214096	Marionette	INFO	Stopped listening on port 45037

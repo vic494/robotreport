@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.7 on linux)" generated="2024-12-04T13:48:40.124934" rpa="false" schemaversion="5">
+<suite id="s1" name="CrearCorreoElectronico" source="/home/miguelangelhernandez/Documentos/Automatización/claroscoreV3/ClaroScore/Tests/TReglasduras/ReglasPersonalizadas/CreacionReglas/Unacondicion/CrearCorreoElectronico.robot">
+<test id="s1-t1" name="Prueba creación de regla Correo electronico, termina con, una condición" line="5">
+<kw name="Creación regla Correo electronico, Termina Con, Una condición" owner="keywordsreglasperso">
+<kw name="Ingresar a Reglas Personalizadas" owner="keywordsreglasperso">
+<kw name="Desplegar menu Reglas Duras" owner="keywordsreglasduras">
+<kw name="Login succesfull simple" owner="keywords_login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:40.270876" level="INFO">Opening browser 'chrome' to base url 'https://alpha-admin.dev.t1score.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-04T13:48:40.270675" elapsed="1.361089"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-12-04T13:48:41.631983" elapsed="0.000825"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-04T13:48:41.632943" elapsed="0.034741"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:41.668250" level="INFO">Typing text 'victor@t1pagos.com' into text field 'username'.</msg>
+<arg>username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:41.667872" elapsed="0.822303"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:42.490751" level="INFO">Typing text '5sAZd-52q_c2' into text field 'password'.</msg>
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:42.490543" elapsed="0.053255"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:42.544148" level="INFO">Clicking element 'login'.</msg>
+<arg>${btnIngresar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:42.543964" elapsed="0.251907"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:48:40.270227" elapsed="2.525864"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:42.796781" level="INFO">Clicking element 'xpath=//span[text()='Reglas duras']'.</msg>
+<arg>${ButReglasDuras}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:42.796370" elapsed="1.795770"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:48:46.592852" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:48:44.592405" elapsed="2.000676"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:48:40.270082" elapsed="6.323262"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:46.594267" level="INFO">Clicking element 'xpath=//span[text()='Reglas personalizadas']'.</msg>
+<arg>${ButReglasPerso}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:46.593701" elapsed="0.068592"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:48:40.269920" elapsed="6.392515"/>
+</kw>
+<kw name="Ingresar a formulario &quot;Nueva Regla&quot;" owner="keywordsreglasperso">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:46.663196" level="INFO">Clicking element 'xpath=/html/body/div[@id='__next']/div[@class='flex']/main[@class='w-full']/section[@class='p-10']/div[@class='flex items-center flex-col gap-4 md:justify-between md:flex-row']/div[@class='w-full md:basis-1/2']/div[@class='w-full flex md:justify-end']/button[contains(@class, 'MuiButtonBase-root') and contains(@class, 'MuiButton-outlinedPrimary')]'.</msg>
+<arg>${ButNuevaRegla}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:46.662921" elapsed="0.194170"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:48:49.857853" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:48:46.857342" elapsed="3.000746"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:48:46.662621" elapsed="3.195689"/>
+</kw>
+<kw name="Ingresar a formulario y completar los primeros datos" owner="keywordsreglasperso">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-04T13:48:49.860288" level="INFO">${numrandomR} = 545</msg>
+<var>${numrandomR}</var>
+<arg>random.randint(${MIN_NUMBER}, ${MAX_NUMBER})</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-04T13:48:49.859465" elapsed="0.000891"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:48:49.861069" level="INFO">${NomReglaRan} = Lista numero: 545</msg>
+<var>${NomReglaRan}</var>
+<arg>Lista numero: ${numrandomR}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:48:49.860666" elapsed="0.000482"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NomReglaP}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-04T13:48:49.861448" elapsed="0.052645"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:49.914741" level="INFO">Typing text 'Lista numero: 545' into text field 'name'.</msg>
+<arg>${NomReglaP}</arg>
+<arg>${NomReglaRan}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:49.914379" elapsed="0.158115"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:50.072888" level="INFO">Typing text 'Descripción de reglas auto' into text field 'description'.</msg>
+<arg>${DescReglaP}</arg>
+<arg>Descripción de reglas auto</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:50.072676" elapsed="0.168288"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Ingresa a nueva regla</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:48:50.241287" elapsed="0.000166"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:48:52.241889" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:48:50.241578" elapsed="2.000524"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:48:49.858812" elapsed="2.383499"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:48:54.243087" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:48:52.242619" elapsed="2.000672"/>
+</kw>
+<kw name="Una condicion Correo electronico no termina con" owner="keywordsreglasperso">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-12-04T13:48:54.244807" level="INFO">Length is 100.</msg>
+<msg time="2024-12-04T13:48:54.244963" level="INFO">${length} = 100</msg>
+<var>${length}</var>
+<arg>${correos_negativos}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-12-04T13:48:54.244508" elapsed="0.000505"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${length}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:48:54.245272" elapsed="0.000356"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:48:54.247320" level="INFO">${correo} = hunter.black94@gmail.com</msg>
+<var>${correo}</var>
+<arg>${correos_negativos}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:48:54.246881" elapsed="0.000519"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:54.248108" level="INFO">Clicking button 'xpath=//button[text()='Nueva condición']'.</msg>
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:54.247726" elapsed="0.090026"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:54.338318" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[2]'.</msg>
+<arg>${ListaProveedorP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:54.338020" elapsed="0.059374"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:54.397737" level="INFO">Clicking element 'xpath=//li[contains(text(), 'TRANSACCION')]'.</msg>
+<arg>${ElemenProveeTra}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:54.397567" elapsed="0.410890"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:54.808811" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[3]'.</msg>
+<arg>${ListaElemenTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:54.808625" elapsed="0.390105"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:48:55.199600" level="INFO">${ElementoTran} = //div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]</msg>
+<var>${ElementoTran}</var>
+<arg>//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][${3}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:48:55.198989" elapsed="0.000638"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:55.199940" level="INFO">Clicking element '//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]'.</msg>
+<arg>${ElementoTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:55.199746" elapsed="0.501812"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear tipo de transaccion</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:48:55.701747" elapsed="0.000166"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:48:57.702433" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:48:55.701999" elapsed="2.000640"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:57.703417" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[4]'.</msg>
+<arg>${ListaCondi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:57.702993" elapsed="0.069640"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${EsigualA}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-04T13:48:57.772813" elapsed="0.434806"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear lista de condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:48:58.207779" elapsed="0.000142"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:48:58.208159" level="INFO">Clicking element '//li[contains(text(), 'Es igual a')]'.</msg>
+<arg>${EsigualA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:48:58.208014" elapsed="0.059475"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:48:58.267657" elapsed="0.000147"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:01.268209" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:48:58.267887" elapsed="3.000569"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:01.269322" level="INFO">Typing text 'hunter.black94@gmail.com' into text field 'valueToCompare'.</msg>
+<arg>${Valoracomp}</arg>
+<arg>${correo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:01.268829" elapsed="0.285833"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:01.555333" level="INFO">Clicking button 'xpath=//button[text()='Guardar condición']'.</msg>
+<arg>${ButGuardarCondi}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:01.554992" elapsed="0.081489"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-04T13:49:01.636757" elapsed="0.011330"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-12-04T13:48:54.246585" elapsed="7.401588"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:01.648699" level="INFO">${correo} = hunter.black63@hotmail.com</msg>
+<var>${correo}</var>
+<arg>${correos_negativos}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:01.648524" elapsed="0.000195"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:01.648944" level="INFO">Clicking button 'xpath=//button[text()='Nueva condición']'.</msg>
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:01.648811" elapsed="0.058240"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:01.707431" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[2]'.</msg>
+<arg>${ListaProveedorP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:01.707222" elapsed="0.040175"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:01.747734" level="INFO">Clicking element 'xpath=//li[contains(text(), 'TRANSACCION')]'.</msg>
+<arg>${ElemenProveeTra}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:01.747557" elapsed="0.058461"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:01.806388" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[3]'.</msg>
+<arg>${ListaElemenTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:01.806187" elapsed="0.333754"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:02.140639" level="INFO">${ElementoTran} = //div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]</msg>
+<var>${ElementoTran}</var>
+<arg>//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][${3}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:02.140108" elapsed="0.000555"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:02.140996" level="INFO">Clicking element '//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]'.</msg>
+<arg>${ElementoTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:02.140833" elapsed="0.479729"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear tipo de transaccion</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:02.620728" elapsed="0.000166"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:04.621303" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:49:02.620977" elapsed="2.000570"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:04.622411" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[4]'.</msg>
+<arg>${ListaCondi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:04.621943" elapsed="0.064414"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${EsigualA}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-04T13:49:04.686623" elapsed="0.276496"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear lista de condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:04.963275" elapsed="0.000139"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:04.963650" level="INFO">Clicking element '//li[contains(text(), 'Es igual a')]'.</msg>
+<arg>${EsigualA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:04.963508" elapsed="0.056016"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:05.019690" elapsed="0.000172"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:08.020292" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:49:05.019983" elapsed="3.000561"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:08.021495" level="INFO">Typing text 'hunter.black63@hotmail.com' into text field 'valueToCompare'.</msg>
+<arg>${Valoracomp}</arg>
+<arg>${correo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.020935" elapsed="0.298377"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:08.320181" level="INFO">Clicking button 'xpath=//button[text()='Guardar condición']'.</msg>
+<arg>${ButGuardarCondi}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.319741" elapsed="0.069450"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.389355" elapsed="0.009856"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-12-04T13:49:01.648410" elapsed="6.750866"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:08.399721" level="INFO">${correo} = hunter.black51@yahoo.com</msg>
+<var>${correo}</var>
+<arg>${correos_negativos}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.399559" elapsed="0.000183"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:08.399948" level="INFO">Clicking button 'xpath=//button[text()='Nueva condición']'.</msg>
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.399824" elapsed="0.056194"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:08.456412" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[2]'.</msg>
+<arg>${ListaProveedorP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.456196" elapsed="0.047997"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:08.504796" level="INFO">Clicking element 'xpath=//li[contains(text(), 'TRANSACCION')]'.</msg>
+<arg>${ElemenProveeTra}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.504437" elapsed="0.063097"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:08.567889" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[3]'.</msg>
+<arg>${ListaElemenTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.567701" elapsed="0.337630"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:08.906017" level="INFO">${ElementoTran} = //div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]</msg>
+<var>${ElementoTran}</var>
+<arg>//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][${3}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.905520" elapsed="0.000520"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:08.906335" level="INFO">Clicking element '//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]'.</msg>
+<arg>${ElementoTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:08.906183" elapsed="0.609818"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear tipo de transaccion</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:09.516185" elapsed="0.000151"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:11.517000" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:49:09.516539" elapsed="2.000708"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:11.518268" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[4]'.</msg>
+<arg>${ListaCondi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:11.517696" elapsed="0.066573"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${EsigualA}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-04T13:49:11.584455" elapsed="0.446981"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear lista de condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:12.031590" elapsed="0.000129"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:12.032038" level="INFO">Clicking element '//li[contains(text(), 'Es igual a')]'.</msg>
+<arg>${EsigualA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:12.031867" elapsed="0.062258"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:12.094291" elapsed="0.000157"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:15.094808" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:49:12.094530" elapsed="3.000492"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:15.095997" level="INFO">Typing text 'hunter.black51@yahoo.com' into text field 'valueToCompare'.</msg>
+<arg>${Valoracomp}</arg>
+<arg>${correo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.095434" elapsed="0.266612"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:15.362690" level="INFO">Clicking button 'xpath=//button[text()='Guardar condición']'.</msg>
+<arg>${ButGuardarCondi}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.362353" elapsed="0.072480"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.434990" elapsed="0.010752"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-12-04T13:49:08.399453" elapsed="7.046354"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:15.446220" level="INFO">${correo} = hunter.black5@outlook.com</msg>
+<var>${correo}</var>
+<arg>${correos_negativos}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.446065" elapsed="0.000174"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:15.446452" level="INFO">Clicking button 'xpath=//button[text()='Nueva condición']'.</msg>
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.446318" elapsed="0.061097"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:15.507771" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[2]'.</msg>
+<arg>${ListaProveedorP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.507582" elapsed="0.039066"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:15.546981" level="INFO">Clicking element 'xpath=//li[contains(text(), 'TRANSACCION')]'.</msg>
+<arg>${ElemenProveeTra}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.546806" elapsed="0.053445"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:15.600621" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[3]'.</msg>
+<arg>${ListaElemenTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.600434" elapsed="0.332796"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:15.934402" level="INFO">${ElementoTran} = //div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]</msg>
+<var>${ElementoTran}</var>
+<arg>//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][${3}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.933514" elapsed="0.000933"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:15.934782" level="INFO">Clicking element '//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]'.</msg>
+<arg>${ElementoTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:15.934616" elapsed="0.432571"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear tipo de transaccion</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:16.367354" elapsed="0.000161"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:18.367887" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:49:16.367609" elapsed="2.000487"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:18.368888" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[4]'.</msg>
+<arg>${ListaCondi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:18.368460" elapsed="0.070728"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${EsigualA}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-04T13:49:18.439354" elapsed="0.441151"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear lista de condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:18.880681" elapsed="0.000133"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:18.881049" level="INFO">Clicking element '//li[contains(text(), 'Es igual a')]'.</msg>
+<arg>${EsigualA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:18.880908" elapsed="0.059135"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:18.940210" elapsed="0.000149"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:21.940865" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:49:18.940488" elapsed="3.000595"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:21.941954" level="INFO">Typing text 'hunter.black5@outlook.com' into text field 'valueToCompare'.</msg>
+<arg>${Valoracomp}</arg>
+<arg>${correo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:21.941467" elapsed="0.304802"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:22.246692" level="INFO">Clicking button 'xpath=//button[text()='Guardar condición']'.</msg>
+<arg>${ButGuardarCondi}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:22.246466" elapsed="0.072570"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-04T13:49:22.319254" elapsed="0.011514"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-12-04T13:49:15.445966" elapsed="6.884867"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:22.331268" level="INFO">${correo} = hunter.black2@live.com</msg>
+<var>${correo}</var>
+<arg>${correos_negativos}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:22.331106" elapsed="0.000183"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:22.331709" level="INFO">Clicking button 'xpath=//button[text()='Nueva condición']'.</msg>
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:22.331455" elapsed="0.064278"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:22.396113" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[2]'.</msg>
+<arg>${ListaProveedorP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:22.395912" elapsed="0.051802"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:22.448178" level="INFO">Clicking element 'xpath=//li[contains(text(), 'TRANSACCION')]'.</msg>
+<arg>${ElemenProveeTra}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:22.447971" elapsed="0.060341"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:22.508682" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[3]'.</msg>
+<arg>${ListaElemenTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:22.508494" elapsed="0.343294"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:22.852506" level="INFO">${ElementoTran} = //div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]</msg>
+<var>${ElementoTran}</var>
+<arg>//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][${3}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:22.851956" elapsed="0.000581"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:22.852839" level="INFO">Clicking element '//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]'.</msg>
+<arg>${ElementoTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:22.852672" elapsed="0.480991"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear tipo de transaccion</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:23.333834" elapsed="0.000160"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:25.334433" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:49:23.334082" elapsed="2.000590"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:25.335699" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[4]'.</msg>
+<arg>${ListaCondi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:25.335071" elapsed="0.073106"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${EsigualA}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-04T13:49:25.408354" elapsed="0.443844"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear lista de condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:25.852350" elapsed="0.000146"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:25.852758" level="INFO">Clicking element '//li[contains(text(), 'Es igual a')]'.</msg>
+<arg>${EsigualA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:25.852606" elapsed="0.060173"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:25.912946" elapsed="0.000139"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:28.913492" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:49:25.913178" elapsed="3.000531"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:28.914584" level="INFO">Typing text 'hunter.black2@live.com' into text field 'valueToCompare'.</msg>
+<arg>${Valoracomp}</arg>
+<arg>${correo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:28.914072" elapsed="0.269055"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:29.183520" level="INFO">Clicking button 'xpath=//button[text()='Guardar condición']'.</msg>
+<arg>${ButGuardarCondi}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:29.183308" elapsed="0.073636"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-04T13:49:29.257104" elapsed="0.009000"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2024-12-04T13:49:22.331002" elapsed="6.935168"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:29.266607" level="INFO">${correo} = hunter.stone70@gmail.com</msg>
+<var>${correo}</var>
+<arg>${correos_negativos}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:29.266443" elapsed="0.000185"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:29.266877" level="INFO">Clicking button 'xpath=//button[text()='Nueva condición']'.</msg>
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:29.266729" elapsed="0.074149"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:29.341248" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[2]'.</msg>
+<arg>${ListaProveedorP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:29.341053" elapsed="0.054583"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:29.396031" level="INFO">Clicking element 'xpath=//li[contains(text(), 'TRANSACCION')]'.</msg>
+<arg>${ElemenProveeTra}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:29.395821" elapsed="0.065518"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:29.461709" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[3]'.</msg>
+<arg>${ListaElemenTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:29.461518" elapsed="0.329940"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-04T13:49:29.792216" level="INFO">${ElementoTran} = //div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]</msg>
+<var>${ElementoTran}</var>
+<arg>//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][${3}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-04T13:49:29.791644" elapsed="0.000598"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:29.792615" level="INFO">Clicking element '//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][3]'.</msg>
+<arg>${ElementoTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:29.792441" elapsed="0.514502"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear tipo de transaccion</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-04T13:49:30.307130" elapsed="0.000135"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:49:32.307631" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:49:30.307342" elapsed="2.000515"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:32.308695" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[4]'.</msg>
+<arg>${ListaCondi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:49:32.308229" elapsed="0.069345"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:49:42.895887" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-04T13:49:42.896081" level="FAIL">Element with locator '//li[contains(text(), 'Es igual a')]' not found.</msg>
+<arg>${EsigualA}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="FAIL" start="2024-12-04T13:49:32.377760" elapsed="10.519716">Element with locator '//li[contains(text(), 'Es igual a')]' not found.</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear lista de condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-12-04T13:49:42.897672" elapsed="0.000030"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${EsigualA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-04T13:49:42.897785" elapsed="0.000019"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-12-04T13:49:42.897870" elapsed="0.000020"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-12-04T13:49:42.897951" elapsed="0.000019"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${Valoracomp}</arg>
+<arg>${correo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-04T13:49:42.898047" elapsed="0.000018"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${ButGuardarCondi}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-04T13:49:42.898129" elapsed="0.000015"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-12-04T13:49:42.898207" elapsed="0.000016"/>
+</kw>
+<var name="${index}">5</var>
+<status status="FAIL" start="2024-12-04T13:49:29.266333" elapsed="13.631945">Element with locator '//li[contains(text(), 'Es igual a')]' not found.</status>
+</iter>
+<var>${index}</var>
+<value>0</value>
+<value>${length}</value>
+<status status="FAIL" start="2024-12-04T13:48:54.245896" elapsed="48.652447">Element with locator '//li[contains(text(), 'Es igual a')]' not found.</status>
+</for>
+<status status="FAIL" start="2024-12-04T13:48:54.243952" elapsed="48.654518">Element with locator '//li[contains(text(), 'Es igual a')]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-12-04T13:48:40.269632" elapsed="62.628907">Element with locator '//li[contains(text(), 'Es igual a')]' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-12-04T13:49:42.898699" elapsed="0.000024"/>
+</kw>
+<status status="FAIL" start="2024-12-04T13:48:40.269002" elapsed="62.629914">Element with locator '//li[contains(text(), 'Es igual a')]' not found.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-04T13:48:40.125740" elapsed="62.773688"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="CrearCorreoElectronico">CrearCorreoElectronico</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

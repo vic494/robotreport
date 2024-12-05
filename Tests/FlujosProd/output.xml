@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.7 on linux)" generated="2024-12-05T13:25:44.220215" rpa="false" schemaversion="5">
+<suite id="s1" name="TipoReglas" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas">
+<suite id="s1-s1" name="FlujoCompletoApellidoMater" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoApellidoMater.robot">
+<test id="s1-s1-t1" name="Ejecutar un flujo completo Apellido materno" line="8">
+<kw name="Flujo completo creación de regla personalizada Apellido materno, una condición" owner="keywords_FlujosCompletos">
+<kw name="Desplegar menu de reglas" owner="keywords_FlujosCompletos">
+<kw name="Login succesfull simple" owner="keywords_login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:44.452429" level="INFO">Opening browser 'chrome' to base url 'https://alpha-admin.dev.t1score.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-05T13:25:44.452151" elapsed="1.455512"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-12-05T13:25:45.907946" elapsed="0.001558"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-05T13:25:45.909716" elapsed="0.040379"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:45.951577" level="INFO">Typing text 'victor@t1pagos.com' into text field 'username'.</msg>
+<arg>username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:45.950627" elapsed="0.553468"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:46.505208" level="INFO">Typing text '5sAZd-52q_c2' into text field 'password'.</msg>
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:46.504616" elapsed="0.174940"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:46.680378" level="INFO">Clicking element 'login'.</msg>
+<arg>${btnIngresar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:46.679924" elapsed="0.336805"/>
+</kw>
+<status status="PASS" start="2024-12-05T13:25:44.451480" elapsed="2.565592"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:47.018099" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[1]'.</msg>
+<arg>${ButComercio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:47.017483" elapsed="4.433946"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:51.452467" level="INFO">Clicking element 'xpath=//li[contains(text(), 'Sears crédito')]'.</msg>
+<arg>${Comer2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:51.451878" elapsed="0.225333"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:51.678042" level="INFO">Clicking element 'xpath=//span[text()='Reglas duras']'.</msg>
+<arg>${ReglasD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:51.677670" elapsed="0.169120"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:25:53.847756" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:25:51.847095" elapsed="2.000903"/>
+</kw>
+<status status="PASS" start="2024-12-05T13:25:44.451163" elapsed="9.397426"/>
+</kw>
+<kw name="Ingresar a Reglas personalizadas" owner="keywords_FlujosCompletos">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:53.850562" level="INFO">Clicking element 'xpath=//span[text()='Reglas personalizadas']'.</msg>
+<arg>${ReglasP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:53.850064" elapsed="0.329943"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Ingresa a reglas personalizadas</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:25:54.180343" elapsed="0.000385"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:25:56.181568" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:25:54.180985" elapsed="2.000816"/>
+</kw>
+<status status="PASS" start="2024-12-05T13:25:53.849263" elapsed="2.332753"/>
+</kw>
+<kw name="Ingresar a formulario nueva regla personalizada" owner="keywords_FlujosCompletos">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-05T13:25:56.184010" level="INFO">${numrandomR} = 48</msg>
+<var>${numrandomR}</var>
+<arg>random.randint(${MIN_NUMBER}, ${MAX_NUMBER})</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-05T13:25:56.183326" elapsed="0.000747"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-05T13:25:56.184742" level="INFO">${NomReglaRan} = Lista numero: 48</msg>
+<var>${NomReglaRan}</var>
+<arg>Lista numero: ${numrandomR}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-05T13:25:56.184371" elapsed="0.000428"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:56.185417" level="INFO">Clicking element 'xpath=//button[text()='Nueva Regla']'.</msg>
+<arg>${NuevaRP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:56.185057" elapsed="0.183790"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NomReglaP}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-05T13:25:56.369141" elapsed="0.024336"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:56.394073" level="INFO">Typing text 'Lista numero: 48' into text field 'name'.</msg>
+<arg>${NomReglaP}</arg>
+<arg>${NomReglaRan}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:56.393734" elapsed="0.254404"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:25:56.648676" level="INFO">Typing text 'Descripción de reglas auto' into text field 'description'.</msg>
+<arg>${DescReglaP}</arg>
+<arg>Descripción de reglas auto</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:25:56.648401" elapsed="0.257853"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Ingresa a nueva regla</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:25:56.907408" elapsed="0.001308"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:25:58.910493" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:25:56.909506" elapsed="2.001408"/>
+</kw>
+<status status="PASS" start="2024-12-05T13:25:56.182741" elapsed="2.728574"/>
+</kw>
+<kw name="Una condicion Apellido Materno no termina con" owner="keywordsreglasperso">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-12-05T13:25:58.915539" level="INFO">Length is 3.</msg>
+<msg time="2024-12-05T13:25:58.915882" level="INFO">${length} = 3</msg>
+<var>${length}</var>
+<arg>${ClienteApellidoMaterno}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-12-05T13:25:58.914881" elapsed="0.001099"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${length}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:25:58.916718" elapsed="0.000522"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-05T13:25:58.919319" level="INFO">${apellidomaterno} = Nocturne</msg>
+<var>${apellidomaterno}</var>
+<arg>${apellidos_malos}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-05T13:25:58.918683" elapsed="0.000742"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:26:00.920952" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:25:58.919830" elapsed="2.001683"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:00.923703" level="INFO">Clicking button 'xpath=//button[text()='Nueva condición']'.</msg>
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:00.922282" elapsed="0.204652"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:01.127621" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[2]'.</msg>
+<arg>${ListaProveedorP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:01.127272" elapsed="0.121773"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:01.249634" level="INFO">Clicking element 'xpath=//li[contains(text(), 'TRANSACCION')]'.</msg>
+<arg>${ElemenProveeTra}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:01.249338" elapsed="0.573550"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:01.823454" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[3]'.</msg>
+<arg>${ListaElemenTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:01.823149" elapsed="0.421134"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-05T13:26:02.247861" level="INFO">${ElementoTran} = //div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][18]</msg>
+<var>${ElementoTran}</var>
+<arg>//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][${18}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-05T13:26:02.244894" elapsed="0.003157"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:02.248909" level="INFO">Clicking element '//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][18]'.</msg>
+<arg>${ElementoTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:02.248516" elapsed="0.614520"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear tipo de transaccion</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:26:02.863399" elapsed="0.000302"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:26:04.864636" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:26:02.864035" elapsed="2.000844"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:04.866065" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[4]'.</msg>
+<arg>${ListaCondi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:04.865404" elapsed="0.171704"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:26:08.037846" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:26:05.037378" elapsed="3.000713"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${EsigualA}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-05T13:26:08.038598" elapsed="0.068790"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear lista de condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:26:08.107819" elapsed="0.000329"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:08.108857" level="INFO">Clicking element '//li[contains(text(), 'Es igual a')]'.</msg>
+<arg>${EsigualA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:08.108481" elapsed="0.202141"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:26:08.310878" elapsed="0.000235"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:26:14.311673" level="INFO">Slept 6 seconds.</msg>
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:26:08.311251" elapsed="6.000738"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:14.313097" level="INFO">Typing text 'Nocturne' into text field 'valueToCompare'.</msg>
+<arg>${Valoracomp}</arg>
+<arg>${apellidomaterno}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:14.312531" elapsed="0.332317"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Prueba${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:26:14.645189" elapsed="0.000730"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:14.646667" level="INFO">Clicking button 'xpath=//button[text()='Guardar condición']'.</msg>
+<arg>${ButGuardarCondi}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:14.646282" elapsed="0.168228"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-05T13:26:14.814760" elapsed="0.037022"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-12-05T13:25:58.918347" elapsed="15.933548"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-05T13:26:14.852786" level="INFO">${apellidomaterno} = Crowley</msg>
+<var>${apellidomaterno}</var>
+<arg>${apellidos_malos}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-05T13:26:14.852412" elapsed="0.000412"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:26:16.854006" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:26:14.852982" elapsed="2.001684"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:16.856706" level="INFO">Clicking button 'xpath=//button[text()='Nueva condición']'.</msg>
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:16.855707" elapsed="0.213959"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:17.070195" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[2]'.</msg>
+<arg>${ListaProveedorP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:17.069918" elapsed="0.136078"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:17.206797" level="INFO">Clicking element 'xpath=//li[contains(text(), 'TRANSACCION')]'.</msg>
+<arg>${ElemenProveeTra}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:17.206386" elapsed="0.211466"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:17.418673" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[3]'.</msg>
+<arg>${ListaElemenTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:17.418222" elapsed="0.390924"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-05T13:26:17.810648" level="INFO">${ElementoTran} = //div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][18]</msg>
+<var>${ElementoTran}</var>
+<arg>//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][${18}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-05T13:26:17.809428" elapsed="0.001277"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:17.811137" level="INFO">Clicking element '//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-594a8l']//ul/li[contains(@class, 'MuiMenuItem-root')][18]'.</msg>
+<arg>${ElementoTran}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:17.810898" elapsed="0.536128"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear tipo de transaccion</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:26:18.347583" elapsed="0.000323"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:26:20.348662" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:26:18.348120" elapsed="2.000780"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:20.349951" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[4]'.</msg>
+<arg>${ListaCondi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:20.349378" elapsed="0.187355"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:26:23.537476" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:26:20.536988" elapsed="3.000783"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${EsigualA}</arg>
+<arg>6s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-05T13:26:23.538197" elapsed="0.046316"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear lista de condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:26:23.584885" elapsed="0.000317"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:23.586144" level="INFO">Clicking element '//li[contains(text(), 'Es igual a')]'.</msg>
+<arg>${EsigualA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:23.585594" elapsed="0.180671"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CLickear condificones</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-05T13:26:23.766498" elapsed="0.000183"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-05T13:26:29.767119" level="INFO">Slept 6 seconds.</msg>
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-05T13:26:23.766807" elapsed="6.000543"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:29.768320" level="INFO">Typing text 'Crowley' into text field 'valueToCompare'.</msg>
+<msg time="2024-12-05T13:26:29.787609" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c9f1176d3e &lt;unknown&gt;
+#1 0x55c9f0c8d511 &lt;unknown&gt;
+#2 0x55c9f0c676fd &lt;unknown&gt;
+#3 0x55c9f0d0765a &lt;unknown&gt;
+#4 0x55c9f0d1cd8b &lt;unknown&gt;
+#5 0x55c9f0cfe663 &lt;unknown&gt;
+#6 0x55c9f0cce4df &lt;unknown&gt;
+#7 0x55c9f0ccf33e &lt;unknown&gt;
+#8 0x55c9f114929e &lt;unknown&gt;
+#9 0x55c9f114c713 &lt;unknown&gt;
+#10 0x55c9f114c178 &lt;unknown&gt;
+#11 0x55c9f114cb75 &lt;unknown&gt;
+#12 0x55c9f113a2bb &lt;unknown&gt;
+#13 0x55c9f114cf2e &lt;unknown&gt;
+#14 0x55c9f11242b2 &lt;unknown&gt;
+#15 0x55c9f1165b95 &lt;unknown&gt;
+#16 0x55c9f1165dab &lt;unknown&gt;
+#17 0x55c9f117593c &lt;unknown&gt;
+#18 0x7f5bf51b66d7 start_thread
+#19 0x7f5bf523a60c __clone3
+</msg>
+<msg time="2024-12-05T13:26:29.788240" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c9f1176d3e &lt;unknown&gt;
+#1 0x55c9f0c8d511 &lt;unknown&gt;
+#2 0x55c9f0c676fd &lt;unknown&gt;
+#3 0x55c9f0d0765a &lt;unknown&gt;
+#4 0x55c9f0d1cd8b &lt;unknown&gt;
+#5 0x55c9f0cfe663 &lt;unknown&gt;
+#6 0x55c9f0cce4df &lt;unknown&gt;
+#7 0x55c9f0ccf33e &lt;unknown&gt;
+#8 0x55c9f114929e &lt;unknown&gt;
+#9 0x55c9f114c713 &lt;unknown&gt;
+#10 0x55c9f114c178 &lt;unknown&gt;
+#11 0x55c9f114cb75 &lt;unknown&gt;
+#12 0x55c9f113a2bb &lt;unknown&gt;
+#13 0x55c9f114cf2e &lt;unknown&gt;
+#14 0x55c9f11242b2 &lt;unknown&gt;
+#15 0x55c9f1165b95 &lt;unknown&gt;
+#16 0x55c9f1165dab &lt;unknown&gt;
+#17 0x55c9f117593c &lt;unknown&gt;
+#18 0x7f5bf51b66d7 start_thread
+#19 0x7f5bf523a60c __clone3
+</msg>
+<arg>${Valoracomp}</arg>
+<arg>${apellidomaterno}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-12-05T13:26:29.767834" elapsed="0.035853">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c9f1176d3e &lt;unknown&gt;
+#1 0x55c9f0c8d511 &lt;unknown&gt;
+#2 0x55c9f0c676fd &lt;unknown&gt;
+#3 0x55c9f0d0765a &lt;unknown&gt;
+#4 0x55c9f0d1cd8b &lt;unknown&gt;
+#5 0x55c9f0cfe663 &lt;unknown&gt;
+#6 0x55c9f0cce4df &lt;unknown&gt;
+#7 0x55c9f0ccf33e &lt;unknown&gt;
+#8 0x55c9f114929e &lt;unknown&gt;
+#9 0x55c9f114c713 &lt;unknown&gt;
+#10 0x55c9f114c178 &lt;unknown&gt;
+#11 0x55c9f114cb75 &lt;unknown&gt;
+#12 0x55c9f113a2bb &lt;unknown&gt;
+#13 0x55c9f114cf2e &lt;unknown&gt;
+#14 0x55c9f11242b2 &lt;unknown&gt;
+#15 0x55c9f1165b95 &lt;unknown&gt;
+#16 0x55c9f1165dab &lt;unknown&gt;
+#17 0x55c9f117593c &lt;unknown&gt;
+#18 0x7f5bf51b66d7 start_thread
+#19 0x7f5bf523a60c __clone3
+</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Prueba${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:29.804118" elapsed="0.000073"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${ButGuardarCondi}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:29.804422" elapsed="0.000055"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NuevaCondiRPUna}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:29.804679" elapsed="0.000046"/>
+</kw>
+<var name="${index}">1</var>
+<status status="FAIL" start="2024-12-05T13:26:14.852203" elapsed="14.952667">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c9f1176d3e &lt;unknown&gt;
+#1 0x55c9f0c8d511 &lt;unknown&gt;
+#2 0x55c9f0c676fd &lt;unknown&gt;
+#3 0x55c9f0d0765a &lt;unknown&gt;
+#4 0x55c9f0d1cd8b &lt;unknown&gt;
+#5 0x55c9f0cfe663 &lt;unknown&gt;
+#6 0x55c9f0cce4df &lt;unknown&gt;
+#7 0x55c9f0ccf33e &lt;unknown&gt;
+#8 0x55c9f114929e &lt;unknown&gt;
+#9 0x55c9f114c713 &lt;unknown&gt;
+#10 0x55c9f114c178 &lt;unknown&gt;
+#11 0x55c9f114cb75 &lt;unknown&gt;
+#12 0x55c9f113a2bb &lt;unknown&gt;
+#13 0x55c9f114cf2e &lt;unknown&gt;
+#14 0x55c9f11242b2 &lt;unknown&gt;
+#15 0x55c9f1165b95 &lt;unknown&gt;
+#16 0x55c9f1165dab &lt;unknown&gt;
+#17 0x55c9f117593c &lt;unknown&gt;
+#18 0x7f5bf51b66d7 start_thread
+#19 0x7f5bf523a60c __clone3
+</status>
+</iter>
+<var>${index}</var>
+<value>0</value>
+<value>${length}</value>
+<status status="FAIL" start="2024-12-05T13:25:58.917559" elapsed="30.887618">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c9f1176d3e &lt;unknown&gt;
+#1 0x55c9f0c8d511 &lt;unknown&gt;
+#2 0x55c9f0c676fd &lt;unknown&gt;
+#3 0x55c9f0d0765a &lt;unknown&gt;
+#4 0x55c9f0d1cd8b &lt;unknown&gt;
+#5 0x55c9f0cfe663 &lt;unknown&gt;
+#6 0x55c9f0cce4df &lt;unknown&gt;
+#7 0x55c9f0ccf33e &lt;unknown&gt;
+#8 0x55c9f114929e &lt;unknown&gt;
+#9 0x55c9f114c713 &lt;unknown&gt;
+#10 0x55c9f114c178 &lt;unknown&gt;
+#11 0x55c9f114cb75 &lt;unknown&gt;
+#12 0x55c9f113a2bb &lt;unknown&gt;
+#13 0x55c9f114cf2e &lt;unknown&gt;
+#14 0x55c9f11242b2 &lt;unknown&gt;
+#15 0x55c9f1165b95 &lt;unknown&gt;
+#16 0x55c9f1165dab &lt;unknown&gt;
+#17 0x55c9f117593c &lt;unknown&gt;
+#18 0x7f5bf51b66d7 start_thread
+#19 0x7f5bf523a60c __clone3
+</status>
+</for>
+<status status="FAIL" start="2024-12-05T13:25:58.912959" elapsed="30.892694">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c9f1176d3e &lt;unknown&gt;
+#1 0x55c9f0c8d511 &lt;unknown&gt;
+#2 0x55c9f0c676fd &lt;unknown&gt;
+#3 0x55c9f0d0765a &lt;unknown&gt;
+#4 0x55c9f0d1cd8b &lt;unknown&gt;
+#5 0x55c9f0cfe663 &lt;unknown&gt;
+#6 0x55c9f0cce4df &lt;unknown&gt;
+#7 0x55c9f0ccf33e &lt;unknown&gt;
+#8 0x55c9f114929e &lt;unknown&gt;
+#9 0x55c9f114c713 &lt;unknown&gt;
+#10 0x55c9f114c178 &lt;unknown&gt;
+#11 0x55c9f114cb75 &lt;unknown&gt;
+#12 0x55c9f113a2bb &lt;unknown&gt;
+#13 0x55c9f114cf2e &lt;unknown&gt;
+#14 0x55c9f11242b2 &lt;unknown&gt;
+#15 0x55c9f1165b95 &lt;unknown&gt;
+#16 0x55c9f1165dab &lt;unknown&gt;
+#17 0x55c9f117593c &lt;unknown&gt;
+#18 0x7f5bf51b66d7 start_thread
+#19 0x7f5bf523a60c __clone3
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${GuardarReglas}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:29.805973" elapsed="0.000052"/>
+</kw>
+<kw name="Agregar set de reglas" owner="keywords_FlujosCompletos">
+<status status="NOT RUN" start="2024-12-05T13:26:29.806390" elapsed="0.000061"/>
+</kw>
+<kw name="Agregar perfil" owner="keywords_FlujosCompletos">
+<status status="NOT RUN" start="2024-12-05T13:26:29.806851" elapsed="0.000074"/>
+</kw>
+<kw name="Asignar al selector de perfiles" owner="keywords_FlujosCompletos">
+<status status="NOT RUN" start="2024-12-05T13:26:29.807183" elapsed="0.000056"/>
+</kw>
+<status status="FAIL" start="2024-12-05T13:25:44.450778" elapsed="45.356685">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c9f1176d3e &lt;unknown&gt;
+#1 0x55c9f0c8d511 &lt;unknown&gt;
+#2 0x55c9f0c676fd &lt;unknown&gt;
+#3 0x55c9f0d0765a &lt;unknown&gt;
+#4 0x55c9f0d1cd8b &lt;unknown&gt;
+#5 0x55c9f0cfe663 &lt;unknown&gt;
+#6 0x55c9f0cce4df &lt;unknown&gt;
+#7 0x55c9f0ccf33e &lt;unknown&gt;
+#8 0x55c9f114929e &lt;unknown&gt;
+#9 0x55c9f114c713 &lt;unknown&gt;
+#10 0x55c9f114c178 &lt;unknown&gt;
+#11 0x55c9f114cb75 &lt;unknown&gt;
+#12 0x55c9f113a2bb &lt;unknown&gt;
+#13 0x55c9f114cf2e &lt;unknown&gt;
+#14 0x55c9f11242b2 &lt;unknown&gt;
+#15 0x55c9f1165b95 &lt;unknown&gt;
+#16 0x55c9f1165dab &lt;unknown&gt;
+#17 0x55c9f117593c &lt;unknown&gt;
+#18 0x7f5bf51b66d7 start_thread
+#19 0x7f5bf523a60c __clone3
+</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:29.807958" elapsed="0.000057"/>
+</kw>
+<status status="FAIL" start="2024-12-05T13:25:44.449851" elapsed="45.358647">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c9f1176d3e &lt;unknown&gt;
+#1 0x55c9f0c8d511 &lt;unknown&gt;
+#2 0x55c9f0c676fd &lt;unknown&gt;
+#3 0x55c9f0d0765a &lt;unknown&gt;
+#4 0x55c9f0d1cd8b &lt;unknown&gt;
+#5 0x55c9f0cfe663 &lt;unknown&gt;
+#6 0x55c9f0cce4df &lt;unknown&gt;
+#7 0x55c9f0ccf33e &lt;unknown&gt;
+#8 0x55c9f114929e &lt;unknown&gt;
+#9 0x55c9f114c713 &lt;unknown&gt;
+#10 0x55c9f114c178 &lt;unknown&gt;
+#11 0x55c9f114cb75 &lt;unknown&gt;
+#12 0x55c9f113a2bb &lt;unknown&gt;
+#13 0x55c9f114cf2e &lt;unknown&gt;
+#14 0x55c9f11242b2 &lt;unknown&gt;
+#15 0x55c9f1165b95 &lt;unknown&gt;
+#16 0x55c9f1165dab &lt;unknown&gt;
+#17 0x55c9f117593c &lt;unknown&gt;
+#18 0x7f5bf51b66d7 start_thread
+#19 0x7f5bf523a60c __clone3
+</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:25:44.244739" elapsed="45.564835"/>
+</suite>
+<suite id="s1-s2" name="FlujoCompletoApellidoPater" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoApellidoPater.robot">
+<test id="s1-s2-t1" name="Ejecutar un flujo completo Apellido paterno" line="8">
+<kw name="Flujo completo creación de regla personalizada Apellido paterno, una condición" owner="keywords_FlujosCompletos">
+<kw name="Desplegar menu de reglas" owner="keywords_FlujosCompletos">
+<kw name="Login succesfull simple" owner="keywords_login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:29.834603" level="INFO">Opening browser 'chrome' to base url 'https://alpha-admin.dev.t1score.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-05T13:26:29.834155" elapsed="1.419865"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-12-05T13:26:31.254464" elapsed="0.001739"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-05T13:26:31.256543" elapsed="0.047443"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:31.304924" level="INFO">Typing text 'victor@t1pagos.com' into text field 'username'.</msg>
+<arg>username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:31.304428" elapsed="0.560268"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:31.865236" level="INFO">Typing text '5sAZd-52q_c2' into text field 'password'.</msg>
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:31.864951" elapsed="0.158829"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:32.024734" level="INFO">Clicking element 'login'.</msg>
+<arg>${btnIngresar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-05T13:26:32.024160" elapsed="0.360054"/>
+</kw>
+<status status="PASS" start="2024-12-05T13:26:29.833733" elapsed="2.550873"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-05T13:26:32.386301" level="INFO">Clicking element '(//div[contains(@class, 'MuiSelect-select')])[1]'.</msg>
+<msg time="2024-12-05T13:26:33.759846" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f84bfc2d4f0&gt;: Failed to establish a new connection: [Errno 111] Connection refused')': /session/718d7178bbede78a933682adc69dd84f/screenshot</msg>
+<msg time="2024-12-05T13:26:33.762306" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f84bfc2c290&gt;: Failed to establish a new connection: [Errno 111] Connection refused')': /session/718d7178bbede78a933682adc69dd84f/screenshot</msg>
+<msg time="2024-12-05T13:26:33.763740" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f84bfc2cf80&gt;: Failed to establish a new connection: [Errno 111] Connection refused')': /session/718d7178bbede78a933682adc69dd84f/screenshot</msg>
+<msg time="2024-12-05T13:26:33.765058" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=55495): Max retries exceeded with url: /session/718d7178bbede78a933682adc69dd84f/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f84bfc2ce90&gt;: Failed to establish a new connection: [Errno 111] Connection refused'))</msg>
+<arg>${ButComercio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-12-05T13:26:32.385022" elapsed="1.380373">Execution terminated by signal</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Comer2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:33.765801" elapsed="0.000079"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ReglasD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:33.766165" elapsed="0.000066"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:33.766543" elapsed="0.000085"/>
+</kw>
+<status status="FAIL" start="2024-12-05T13:26:29.833181" elapsed="3.933772">Execution terminated by signal</status>
+</kw>
+<kw name="Ingresar a Reglas personalizadas" owner="keywords_FlujosCompletos">
+<status status="NOT RUN" start="2024-12-05T13:26:33.767481" elapsed="0.000083"/>
+</kw>
+<kw name="Ingresar a formulario nueva regla personalizada" owner="keywords_FlujosCompletos">
+<status status="NOT RUN" start="2024-12-05T13:26:33.767892" elapsed="0.000700"/>
+</kw>
+<kw name="Una condicion Apellido Paterno no termina con" owner="keywordsreglasperso">
+<status status="NOT RUN" start="2024-12-05T13:26:33.769307" elapsed="0.000110"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${GuardarReglas}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:33.769742" elapsed="0.000088"/>
+</kw>
+<kw name="Agregar set de reglas" owner="keywords_FlujosCompletos">
+<status status="NOT RUN" start="2024-12-05T13:26:33.770229" elapsed="0.000080"/>
+</kw>
+<kw name="Agregar perfil" owner="keywords_FlujosCompletos">
+<status status="NOT RUN" start="2024-12-05T13:26:33.770774" elapsed="0.000225"/>
+</kw>
+<kw name="Asignar al selector de perfiles" owner="keywords_FlujosCompletos">
+<status status="NOT RUN" start="2024-12-05T13:26:33.771322" elapsed="0.000093"/>
+</kw>
+<status status="FAIL" start="2024-12-05T13:26:29.832623" elapsed="3.939032">Execution terminated by signal</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-12-05T13:26:33.772177" elapsed="0.000081"/>
+</kw>
+<status status="FAIL" start="2024-12-05T13:26:29.831396" elapsed="3.941341">Execution terminated by signal</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:29.810773" elapsed="3.962771"/>
+</suite>
+<suite id="s1-s3" name="FlujoCompletoCDCliente" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoCDCliente.robot">
+<test id="s1-s3-t1" name="Ejecutar un flujo completo Ciudad de cliente" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.776223" elapsed="0.001121">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.774968" elapsed="0.003204"/>
+</suite>
+<suite id="s1-s4" name="FlujoCompletoCDEnvio" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoCDEnvio.robot">
+<test id="s1-s4-t1" name="Ejecutar un flujo completo Ciudad de envio" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.780624" elapsed="0.000741">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.779465" elapsed="0.002452"/>
+</suite>
+<suite id="s1-s5" name="FlujoCompletoCDMetodoPago" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoCDMetodoPago.robot">
+<test id="s1-s5-t1" name="Ejecutar un flujo completo Ciudad metodo de pago" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.783757" elapsed="0.000934">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.782731" elapsed="0.002451"/>
+</suite>
+<suite id="s1-s6" name="FlujoCompletoCorreo" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoCorreo.robot">
+<test id="s1-s6-t1" name="Ejecutar un flujo completo Correo electronico" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.786901" elapsed="0.000796">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.786027" elapsed="0.002181"/>
+</suite>
+<suite id="s1-s7" name="FlujoCompletoCPCliente" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoCPCliente.robot">
+<test id="s1-s7-t1" name="Ejecutar un flujo completo Codigo postal cliente" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.789597" elapsed="0.000541">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.788939" elapsed="0.001759"/>
+</suite>
+<suite id="s1-s8" name="FlujoCompletoCPMetodoPago" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoCPMetodoPago.robot">
+<test id="s1-s8-t1" name="Ejecutar un flujo completo Codigo postal Metodo de pago" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.792543" elapsed="0.001003">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.791588" elapsed="0.002685"/>
+</suite>
+<suite id="s1-s9" name="FlujoCompletoDeviceFinger" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoDeviceFinger.robot">
+<test id="s1-s9-t1" name="Ejecutar un flujo completo Device Finger" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.796262" elapsed="0.000590">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.795432" elapsed="0.001962"/>
+</suite>
+<suite id="s1-s10" name="FlujoCompletoeanUPC" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoeanUPC.robot">
+<test id="s1-s10-t1" name="Ejecutar un flujo completo eanUPC" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.799529" elapsed="0.000918">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.798395" elapsed="0.003851"/>
+</suite>
+<suite id="s1-s11" name="FlujoCompletoIDClien" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoIDClien.robot">
+<test id="s1-s11-t1" name="Ejecutar un flujo completo ID Cliente" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.804555" elapsed="0.000784">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.803319" elapsed="0.002674"/>
+</suite>
+<suite id="s1-s12" name="FlujoCompletoIPv4" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoIPv4.robot">
+<test id="s1-s12-t1" name="Ejecutar un flujo completo IPv4" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.808578" elapsed="0.001192">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.807423" elapsed="0.002947"/>
+</suite>
+<suite id="s1-s13" name="FlujoCompletoIPv6" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoIPv6.robot">
+<test id="s1-s13-t1" name="Ejecutar un flujo completo IPv6" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.812252" elapsed="0.000744">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.811326" elapsed="0.002516"/>
+</suite>
+<suite id="s1-s14" name="FlujoCompletoMontoTotal" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoMontoTotal.robot">
+<test id="s1-s14-t1" name="Ejecutar un flujo completo Monto total" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.816617" elapsed="0.000851">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.815113" elapsed="0.003148"/>
+</suite>
+<suite id="s1-s15" name="FlujoCompletoNombre" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoNombre.robot">
+<test id="s1-s15-t1" name="Ejecutar un flujo completo Cliente Nombre" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.820331" elapsed="0.000804">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.819380" elapsed="0.002357"/>
+</suite>
+<suite id="s1-s16" name="FlujoCompletoSKU" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoSKU.robot">
+<test id="s1-s16-t1" name="Ejecutar un flujo completo SKU" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.823875" elapsed="0.000914">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.822832" elapsed="0.002646"/>
+</suite>
+<suite id="s1-s17" name="FlujoCompletoTel" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoTel.robot">
+<test id="s1-s17-t1" name="Ejecutar un flujo completo Telefono" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.827646" elapsed="0.000767">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.826612" elapsed="0.002288"/>
+</suite>
+<suite id="s1-s18" name="FlujoCompletoTokenTar" source="/home/miguelangelhernandez/Documentos/EjecucionCompleta/Tests/FlujosProd/TipoReglas/FlujoCompletoTokenTar.robot">
+<test id="s1-s18-t1" name="Ejecutar un flujo completo Token Tarjeta" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-12-05T13:26:33.830420" elapsed="0.000810">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Login ClaroScore</doc>
+<status status="FAIL" start="2024-12-05T13:26:33.829577" elapsed="0.002281"/>
+</suite>
+<status status="FAIL" start="2024-12-05T13:25:44.221366" elapsed="49.611930"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="18" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="18" skip="0" id="s1" name="TipoReglas">TipoReglas</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="FlujoCompletoApellidoMater">TipoReglas.FlujoCompletoApellidoMater</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="FlujoCompletoApellidoPater">TipoReglas.FlujoCompletoApellidoPater</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s3" name="FlujoCompletoCDCliente">TipoReglas.FlujoCompletoCDCliente</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s4" name="FlujoCompletoCDEnvio">TipoReglas.FlujoCompletoCDEnvio</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s5" name="FlujoCompletoCDMetodoPago">TipoReglas.FlujoCompletoCDMetodoPago</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s6" name="FlujoCompletoCorreo">TipoReglas.FlujoCompletoCorreo</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s7" name="FlujoCompletoCPCliente">TipoReglas.FlujoCompletoCPCliente</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s8" name="FlujoCompletoCPMetodoPago">TipoReglas.FlujoCompletoCPMetodoPago</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s9" name="FlujoCompletoDeviceFinger">TipoReglas.FlujoCompletoDeviceFinger</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s10" name="FlujoCompletoeanUPC">TipoReglas.FlujoCompletoeanUPC</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s11" name="FlujoCompletoIDClien">TipoReglas.FlujoCompletoIDClien</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s12" name="FlujoCompletoIPv4">TipoReglas.FlujoCompletoIPv4</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s13" name="FlujoCompletoIPv6">TipoReglas.FlujoCompletoIPv6</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s14" name="FlujoCompletoMontoTotal">TipoReglas.FlujoCompletoMontoTotal</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s15" name="FlujoCompletoNombre">TipoReglas.FlujoCompletoNombre</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s16" name="FlujoCompletoSKU">TipoReglas.FlujoCompletoSKU</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s17" name="FlujoCompletoTel">TipoReglas.FlujoCompletoTel</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s18" name="FlujoCompletoTokenTar">TipoReglas.FlujoCompletoTokenTar</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-12-05T13:26:29.787609" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.85)
+Stacktrace:
+#0 0x55c9f1176d3e &lt;unknown&gt;
+#1 0x55c9f0c8d511 &lt;unknown&gt;
+#2 0x55c9f0c676fd &lt;unknown&gt;
+#3 0x55c9f0d0765a &lt;unknown&gt;
+#4 0x55c9f0d1cd8b &lt;unknown&gt;
+#5 0x55c9f0cfe663 &lt;unknown&gt;
+#6 0x55c9f0cce4df &lt;unknown&gt;
+#7 0x55c9f0ccf33e &lt;unknown&gt;
+#8 0x55c9f114929e &lt;unknown&gt;
+#9 0x55c9f114c713 &lt;unknown&gt;
+#10 0x55c9f114c178 &lt;unknown&gt;
+#11 0x55c9f114cb75 &lt;unknown&gt;
+#12 0x55c9f113a2bb &lt;unknown&gt;
+#13 0x55c9f114cf2e &lt;unknown&gt;
+#14 0x55c9f11242b2 &lt;unknown&gt;
+#15 0x55c9f1165b95 &lt;unknown&gt;
+#16 0x55c9f1165dab &lt;unknown&gt;
+#17 0x55c9f117593c &lt;unknown&gt;
+#18 0x7f5bf51b66d7 start_thread
+#19 0x7f5bf523a60c __clone3
+</msg>
+<msg time="2024-12-05T13:26:33.759846" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f84bfc2d4f0&gt;: Failed to establish a new connection: [Errno 111] Connection refused')': /session/718d7178bbede78a933682adc69dd84f/screenshot</msg>
+<msg time="2024-12-05T13:26:33.762306" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f84bfc2c290&gt;: Failed to establish a new connection: [Errno 111] Connection refused')': /session/718d7178bbede78a933682adc69dd84f/screenshot</msg>
+<msg time="2024-12-05T13:26:33.763740" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f84bfc2cf80&gt;: Failed to establish a new connection: [Errno 111] Connection refused')': /session/718d7178bbede78a933682adc69dd84f/screenshot</msg>
+<msg time="2024-12-05T13:26:33.765058" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=55495): Max retries exceeded with url: /session/718d7178bbede78a933682adc69dd84f/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f84bfc2ce90&gt;: Failed to establish a new connection: [Errno 111] Connection refused'))</msg>
+</errors>
+</robot>
