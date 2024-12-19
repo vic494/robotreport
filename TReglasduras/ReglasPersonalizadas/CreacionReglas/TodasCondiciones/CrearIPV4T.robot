@@ -1,8 +1,0 @@
-*** Settings ***
-Documentation     Login ClaroScore
-Resource          ../../../../../Keywords/KReglas duras/keywordsreglasvelo.robot
-*** Test Cases ***
-Prueba creación de regla IPV4, Es igual a, todas las condiciones
-    Creación regla IPV4, Es igual a, Todas condiciones
-    Close Browser
-    
